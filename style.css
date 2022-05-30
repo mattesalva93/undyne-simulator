@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+main{
+    height: 100vh;
+}
+#container{
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms_heartbox{
+    height: 150px;
+    width: 150px;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ms_heart{
+    color: greenyellow;
+    font-size: 1.5rem;
+}
+.ms_shield-up{
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: 80px;
+    height: 5px;
+    background-color: white;
+}
+.ms_shield-rx{
+    position: absolute;
+    right: 25px;
+    width: 5px;
+    height: 80px;
+    background-color: white;
+}
+.ms_shield-lx{
+    position: absolute;
+    left: 25px;
+    width: 5px;
+    height: 80px;
+    background-color: white;
+}
+.ms_shield-down{
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    width: 80px;
+    height: 5px;
+    background-color: white;
+}
