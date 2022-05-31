@@ -1,12 +1,10 @@
 let app = new Vue({
-    el: "#container",
+    el: "#app",
     data: {
         scudo : "",
+        pos: 0,
     },
     methods : {
-        test: function(){
-            console.log('prova riuscita');
-        },
         scudoUp: function(){
             this.scudo = "up";
             console.log(this.scudo)
@@ -23,14 +21,29 @@ let app = new Vue({
             this.scudo = "left";
             console.log(this.scudo)
         },
+        moveDown(){
+            setInterval(() => {
+            if(this.pos < 320){
+                this.pos += 2;
+                let attaccoGiu = document.getElementById("arrowDown");
+                attaccoGiu.style.top = this.pos + "px";
+                console.log(this.pos);
+            }else{
+                let attaccoGiu = document.getElementById("arrowDown");
+                attaccoGiu.style.display = "none";
+                clearInterval();
+            }
+            }, 20);
+        },
+        //mappare ogni tramite keycode i tasti su giu sinistra destra le relative funzioni per lo scudo
         handleKeydown (e) {
         switch (e.keyCode) {
             case 37:
             this.scudoLx();
             break;
             case 38:
-                this.scudoUp();
-                break;
+            this.scudoUp();
+            break;
             case 39: 
             this.scudoRx();
             break;
@@ -40,7 +53,11 @@ let app = new Vue({
         }
         },
     },
+    //assegnazione alla windows delle funzioni per spostare lo scudo
     beforeMount () {
         window.addEventListener('keydown', this.handleKeydown, null);
+    },
+    mounted() {
+        this.moveDown();
     },
 });

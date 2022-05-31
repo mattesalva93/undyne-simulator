@@ -12,9 +12,9 @@
 </head>
 <body>
 
-    <main>
+    <main id="app">
+
         <div id="container">
-            <div @click="scudoUp" style="width: 40px; height: 100px;"></div>
             <div class="ms_heartbox">
                 <div v-if="scudo == 'up'" class="ms_shield-up"></div>
                 <div v-if="scudo == 'right'" class="ms_shield-rx"></div>
@@ -23,8 +23,12 @@
                 <span class="ms_heart"><i class="fa-solid fa-heart"></i></span>
             </div>
         </div>
+        <div class="arrow arrow-down" id="arrowDown">
+
+        </div>
+
     </main>    
- 
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script type="text/javascript" src="myscript.js"></script>
 </body>
