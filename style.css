@@ -67,6 +67,9 @@ main{
 }
 
 .arrow-up{ 
+    position: absolute;
+    bottom: 0;
+    right: calc(50% - 10px);
     transform: rotate(-135deg); 
 }
 .arrow-down{ 
@@ -75,9 +78,15 @@ main{
     right: calc(50% - 10px);
     transform: rotate(45deg);
 }
-.arrow-left{ 
+.arrow-right{
+    position: absolute;
+    top: 50%;
+    right: 1%;  
     transform: rotate(135deg); 
 }
-.arrow-right{ 
+.arrow-left{
+    position: absolute;
+    top: 50%;
+    left: 1%; 
     transform: rotate(-45deg);
 }
