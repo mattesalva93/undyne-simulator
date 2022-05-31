@@ -16,8 +16,8 @@ main{
 }
 
 .ms_heartbox{
-    height: 150px;
-    width: 150px;
+    height: 175px;
+    width: 175px;
     border: 5px solid white;
     display: flex;
     justify-content: center;
@@ -30,32 +30,32 @@ main{
 }
 .ms_shield-up{
     position: absolute;
-    top: 15px;
+    top: 20px;
     left: 30px;
-    width: 80px;
-    height: 5px;
+    width: 105px;
+    height: 2px;
     background-color: white;
 }
 .ms_shield-rx{
     position: absolute;
     right: 25px;
-    width: 5px;
-    height: 80px;
+    width: 2px;
+    height: 105px;
     background-color: white;
 }
 .ms_shield-lx{
     position: absolute;
     left: 25px;
-    width: 5px;
-    height: 80px;
+    width: 2px;
+    height: 105px;
     background-color: white;
 }
 .ms_shield-down{
     position: absolute;
-    bottom: 15px;
+    bottom: 20px;
     left: 30px;
-    width: 80px;
-    height: 5px;
+    width: 105px;
+    height: 2px;
     background-color: white;
 }
 
@@ -80,13 +80,13 @@ main{
 }
 .arrow-right{
     position: absolute;
-    top: 50%;
+    top: 49%;
     right: 1%;  
     transform: rotate(135deg); 
 }
 .arrow-left{
     position: absolute;
-    top: 50%;
+    top: 49%;
     left: 1%; 
     transform: rotate(-45deg);
 }

@@ -73,7 +73,7 @@ let app = new Vue({
             const attacchi = document.getElementById("attacchi");
             attacchi.innerHTML += frecciaLeft;
             setInterval(() => {
-                if(pos < 49){
+                if(pos < 48){
                     pos += 0.5;
                     let attaccoLeft = document.getElementById("arrowLeft-" + indice);
                     attaccoLeft.style.left = pos + "%";
@@ -94,7 +94,7 @@ let app = new Vue({
             const attacchi = document.getElementById("attacchi");
             attacchi.innerHTML += frecciaRight;
             setInterval(() => {
-                if(pos < 49){
+                if(pos < 48){
                     pos += 0.5;
                     let attaccoRight = document.getElementById("arrowRight-" + indice);
                     attaccoRight.style.right = pos + "%";
